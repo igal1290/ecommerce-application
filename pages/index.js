@@ -8,11 +8,15 @@ const HomePage = ({ products, bannerData }) => {
     <>
       <Hero heroBanner={bannerData.length && bannerData[0]} />
       <div>
-        <h2>Reset Selling Products</h2>
+        <h2>Best Selling Products</h2>
         <p>Speakers of many variations</p>
       </div>
-      <div>{products?.map((product) => product.name)}</div>
-      <FooterShowcase />
+      <div>
+        {products?.map((product) => (
+          <Product key={product._id} product={product} />
+        ))}
+      </div>
+      <FooterShowcase footerBanner={bannerData && bannerData[0]} />
     </>
   );
 };

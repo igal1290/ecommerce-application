@@ -26,8 +26,8 @@ const Hero = ({ heroBanner }) => {
           <img
             src={urlFor(heroBanner.image)}
             alt="headphones"
-            width={400}
-            height={400}
+            width={360}
+            height={360}
           />
         </div>
       </div>
