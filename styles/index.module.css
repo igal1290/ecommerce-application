@@ -1,0 +1,10 @@
+.content {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}

@@ -1,0 +1,103 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(20, 69, 123);
+  padding: 0.8rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.navbarScroll {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.8rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.3s;
+  box-shadow: 1px 1px 1px #222;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 0.125rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logoScroll {
+  color: #222;
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 0.125rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.links {
+  display: flex;
+  font-size: 1rem;
+}
+
+.link {
+  display: inline-block;
+  color: #fff;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+.linkScroll {
+  display: inline-block;
+  color: #222;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+.linkScroll::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #222;
+  transition: width 0.3s ease-in-out;
+}
+
+.linkScroll:hover::after {
+  width: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+.link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+.link:hover::after {
+  width: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+.cart {
+  font-size: 1.4rem;
+  color: #222;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.4rem;
+  height: 42px;
+  width: 42px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 0.4rem;
+  border: 1px solid #222;
+}

@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(131, 149, 168);
+  background-color: rgb(20, 69, 123);
   height: 45vh;
+  margin-top: 2rem;
 }
 
 .content {

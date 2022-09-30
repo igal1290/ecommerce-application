@@ -2,6 +2,8 @@
 import Link from 'next/link';
 // lib
 import { urlFor } from '../lib/client';
+// css
+import classes from '../styles/Product.module.css';
 
 const Product = ({ product: { image, name, slug, price } }) => {
   return (

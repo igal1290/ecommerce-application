@@ -1,17 +1,20 @@
 // components
-import { Product, FooterShowcase, Hero } from '../components';
+import { Product, FooterShowcase, Hero, Navbar } from '../components';
 // lib
 import { client } from '../lib/client';
+// css
+import classes from '../styles/index.module.css';
 
 const HomePage = ({ products, bannerData }) => {
   return (
     <>
+      <Navbar />
       <Hero heroBanner={bannerData.length && bannerData[0]} />
-      <div>
+      <div className={classes.content}>
         <h2>Best Selling Products</h2>
         <p>Speakers of many variations</p>
       </div>
-      <div>
+      <div className={classes.products}>
         {products?.map((product) => (
           <Product key={product._id} product={product} />
         ))}
