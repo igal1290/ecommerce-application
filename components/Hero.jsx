@@ -20,7 +20,6 @@ const Hero = ({
     <div>
       <div className={classes.showcase}>
         <div className={classes.content}>
-          <p className={classes.smallText}>{smallText}</p>
           <h3 className={classes.midText}>{midText}</h3>
           <h1 className={classes.largeText}>{largeText1}</h1>
           <Link href={`/product/${product}`}>
@@ -28,9 +27,6 @@ const Hero = ({
               {buttonText}
             </button>
           </Link>
-          <div>
-            <p className={classes.desc}>{desc}</p>
-          </div>
         </div>
         <div>
           <img src={urlFor(image)} alt="headphones" width={360} height={360} />
