@@ -1,1 +1,9 @@
+.item {
+  margin-top: 0.8rem;
+  padding: 2rem;
+  text-align: center;
+}
 
+.itemName {
+  margin-top: 0.4rem;
+}

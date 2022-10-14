@@ -7,11 +7,11 @@ import classes from '../styles/Product.module.css';
 
 const Product = ({ product: { image, name, slug, price } }) => {
   return (
-    <div>
+    <div className={classes.item}>
       <Link href={`/product/${slug.current}`}>
         <div>
-          <img src={urlFor(image && image[0])} width={200} height={200} />
-          <p>{name}</p>
+          <img src={urlFor(image && image[0])} width={220} height={220} />
+          <p className={classes.itemName}>{name}</p>
           <p>${price}</p>
         </div>
       </Link>
