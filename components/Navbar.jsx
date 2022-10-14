@@ -1,5 +1,5 @@
 // react
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // next
 import Link from 'next/link';
 // react-icons
@@ -21,7 +21,9 @@ const Navbar = () => {
   };
 
   // scroll eventlistener
-  window.addEventListener('scroll', onScrollHandler);
+  useEffect(() => {
+    window.addEventListener('scroll', onScrollHandler);
+  }, []);
 
   return (
     <nav className={onScroll ? classes.navbarScroll : classes.navbar}>
@@ -41,9 +43,10 @@ const Navbar = () => {
           </p>
         </Link>
       </div>
-      <div className={classes.cart}>
+      <button type="button" className={classes.cart}>
         <BsCart3 />
-      </div>
+        <span className={classes.cartQuantity}>1</span>
+      </button>
     </nav>
   );
 };
