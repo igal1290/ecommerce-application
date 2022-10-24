@@ -1,12 +1,13 @@
 // next
 import Head from 'next/head';
+// components
 import { Navbar, Footer } from '../components';
 
 const Layout = ({ children }) => {
   return (
     <div>
       <Head>
-        <title>Over The Top | Sneakers Ecommerce Store</title>
+        <title>Over The Top | Sneakers Ecommerce Website</title>
       </Head>
       <header>
         <Navbar />
