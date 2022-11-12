@@ -11,11 +11,13 @@ const FooterShowcase = ({
   return (
     <div className={classes.footer}>
       <div className={classes.content}>
-        <div>
-          <p>{discount}</p>
-          <h3>{largeText2}</h3>
+        <div className={classes.contentText}>
+          <p className={classes.discount}>{discount}</p>
+          <h3 className={classes.largeText}>{largeText2}</h3>
           <Link href={`/product/${product}`}>
-            <button type="button">{buttonText}</button>
+            <button className={classes.btnText} type="button">
+              {buttonText}
+            </button>
           </Link>
         </div>
         <img src={urlFor(image)} width={280} height={280}></img>

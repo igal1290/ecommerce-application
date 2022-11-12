@@ -1,9 +1,34 @@
 .footer {
   background-color: #333;
-  height: 30vh;
+  height: 35vh;
 }
 
 .content {
   display: flex;
   justify-content: space-around;
+}
+
+.contentText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.discount {
+  color: #f1f1f1;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+.largeText {
+  color: #f1f1f1;
+  font-size: 3.2rem;
+}
+
+.btnText {
+  padding: 0.4rem;
+  width: 30%;
+  cursor: pointer;
 }
