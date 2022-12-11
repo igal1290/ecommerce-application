@@ -26,7 +26,11 @@ const ProductDetails = ({ product, products }) => {
           </div>
           <div>
             {image?.map((item, i) => (
-              <img src={urlFor(item)} onMouseEnter={() => setIndex(i)} />
+              <img
+                key={item._id}
+                src={urlFor(item)}
+                onMouseEnter={() => setIndex(i)}
+              />
             ))}
           </div>
           <div>
